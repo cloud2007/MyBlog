@@ -15,12 +15,12 @@
 <div id="header">
 	<div id="header_wrap">
 		<div id="logo">
-			<h1 title="Helloweba-致力于WEB前端技术在中国的应用"><a href="http://www.helloweba.com">Helloweba-致力于WEB前端技术在中国的应用</a></h1>
+			<h1 title="tcit123.com的技术博客"><a href="http://www.helloweba.com">tcit123.com的技术博客</a></h1>
 		</div>
 		<ul id="nav">
 			<li><a href="/" class="cur">首　页</a></li>
 			<?php foreach($cateList as $v){?>
-			<li><a href="/"><?php echo $v['categoryTitle'];?></a>
+			<li><a href="/<?php echo $v['categoryTitle1'];?>.html"><?php echo $v['categoryTitle'];?></a>
 				<?php
 				$cateObj = new CategoryTable();
         		$Son = $cateObj->getSon(1, $v['id']);
@@ -28,7 +28,7 @@
 					echo '<div class="sub">';
 					echo '<ul>';
 					foreach($Son as $v){
-						echo '<li><a href="">'.$v['categoryTitle'].'</a></li>';
+						echo '<li><a href="/'.$v['categoryTitle1'].'.html">'.$v['categoryTitle'].'</a></li>';
 					}
 					echo '</ul>';
 					echo '</div>';
@@ -39,4 +39,4 @@
 		</ul>
 	</div>
 </div>
-<div id="banner"></div>
+<!--div id="banner"></div-->

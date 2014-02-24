@@ -4,5 +4,7 @@
 #for rewrite no www domain
 
 RewriteEngine on
+RewriteRule d-(.*).html$ index.php/Home/details/$1
+RewriteRule (.*).html$ index.php/Home/index/$1
 RewriteCond $1 !^(index\.php|admin\.php|Static|Public|Uploads|Backup|error.html)
 RewriteRule ^(.*)$ index.php/$1 [L]

@@ -5,10 +5,10 @@ a:hover{color:#f60; text-decoration:underline}
 
 .btn{border-radius:4px;background-color: #2daebf; border:none; color: white; cursor:pointer; padding:5px 10px;}
 
-#header{ height: 56px; background:#666666;}
+#header{ height: 56px; background:#000;}
 #header_wrap{ width:1000px;}
 #logo {float: left;width: 200px;height: 56px;}
-#logo h1{width:200px; height:56px; background:url(../images/logo.jpg) no-repeat; text-indent:-999em}
+#logo h1{width:200px; height:56px; /*background:url(../images/logo.jpg) no-repeat;*/ text-indent:-999em}
 #logo a{display:block; width:200px; height:56px}
 #nav{float:right; width:680px; height:42px; margin-top:10px; margin-right:0px;}
 #nav li{float:left; height:42px; line-height:42px; width:110px; font-size:16px; text-align:center;position:relative;}
@@ -50,10 +50,9 @@ ul.arc_tj li{font-size:14px;height: 24px;line-height: 24px;background: url(../im
 .pre_page {float: left;width: 310px;background: url(../images/icon.gif) no-repeat 2px -51px;padding-left: 16px;white-space: nowrap;overflow: hidden;}
 .next_page {float: right;width: 300px;background: url(../images/icon.gif) no-repeat right -79px;padding-right: 20px;text-align: right;white-space: nowrap;overflow: hidden;}
 
-#pagecount{width:520px; margin:20px auto 10px auto; height:42px; line-height:30px; font-size:14px; text-align:center}
-#pagecount span{display:block; float:left; height:26px; line-height:26px; margin:2px; padding:0 8px;border:1px solid #d3d3d3; background:#f7f7f7}
-#pagecount span.cur{font-weight:bold; color:#f30;}
-#pagecount span.dot{border:none; background:none; padding:0 4px}
+#pagecount{margin:20px auto 10px auto; float:right; height:42px; line-height:30px; font-size:14px; }
+#pagecount a,#pagecount span{display:block; float:left; height:26px; line-height:26px; margin:2px; padding:0 8px;border:1px solid #d3d3d3; background:#f7f7f7}
+#pagecount span.current{color:#f30;}
 
 #footer{ background:url(../images/footer_bg.jpg); height:170px;}
 .footer_warp{ width:1000px;}

@@ -76,7 +76,7 @@ class CategoryTable extends Data {
         );
         $res = array();
         foreach ($array as $v) {
-            $res[] = array('id' => $v->id, 'parentID' => $v->parentID, 'categoryTitle' => $v->categoryTitle);
+            $res[] = array('id' => $v->id, 'parentID' => $v->parentID, 'categoryTitle' => $v->categoryTitle, 'categoryTitle1' => $v->categoryTitle1);
         }
         return $res;
     }

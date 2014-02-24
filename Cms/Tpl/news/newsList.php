@@ -20,7 +20,7 @@
 		<td><input name="checkID[]" type="checkbox" value="<?php echo $v->id;?>"></td>
 		<td><?php echo $v->id;?></td>
 		<td><?php echo $v->title;?></td>
-		<td><?php echo $v->categoryPath();?></td>
+		<td><?php echo $v->categoryPathUrl();?></td>
 		<td><?php echo $v->status();?></td>
 		<?php echo $Menu->hits ? '<td>' . $v->hits . '</td>' : '';?>
 		<td><?php echo $v->creatTime();?></td>
